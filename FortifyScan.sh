@@ -141,7 +141,7 @@ fi
 
 # Translating the Source
 # *****************************************************************************
-echo pwd
+pwd
 echo -e "[Info]: STARTING TRANSLATION"
 if [ -n "$JAVA_CP" ];
 then

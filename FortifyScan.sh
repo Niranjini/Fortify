@@ -25,6 +25,7 @@ export PATH=$PATH:$1
 SSC_URL=
 PROJECT_FOLDER=$2
 BUILD_ID=$3
+JAVA_VER=$4
 SRC=$PROJECT_FOLDER
 USE_64="-64"
 JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
@@ -32,13 +33,13 @@ JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
 FPR_FILE="${BUILD_ID}.fpr"
 LOG_TRANS="TRANSLOG_${BUILD_ID}.txt"
 LOG_SCAN="SCANLOG_${BUILD_ID}.txt"
-RPT_TEMPLATE=$6
+RPT_TEMPLATE=
 CUSTOM_RULES="/ngs/app/etsqat/softwares/Fortify/Core/config/customrules/CustomRules.xml"
 TRANS_FILE="translate_files.txt"
 #[Niranjini]Token updated on 11/11/14
 AUTHTOKEN=
-PROJECT=$4
-VERSION=$5
+PROJECT=
+VERSION=
 # *****************************************************************************
 
 SCANSTART=`date`

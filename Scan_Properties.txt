@@ -1,5 +1,5 @@
 FORTIFY_PATH="Applications/HP_Fortify/HP_Fortify_SCA_and_Apps_16.10/bin"
-PROJECT_FOLDER="/WebGoat"
+PROJECT_FOLDER=WebGoat
 BUILD_ID=WebGoat
 JAVA_VER=1.8
 RPT_TEMPLATE="DeveloperWorkbook.xml"

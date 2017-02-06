@@ -24,6 +24,7 @@ export PATH=$PATH:$1
 
 SSC_URL=
 var=$2
+echo $var
 SRC= $var | cut -d'=' -f2
 #SRC=$PROJECT_FOLDER
 echo $SRC
@@ -35,7 +36,7 @@ JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
 FPR_FILE="${BUILD_ID}.fpr"
 LOG_TRANS="TRANSLOG_${BUILD_ID}.txt"
 LOG_SCAN="SCANLOG_${BUILD_ID}.txt"
-RPT_TEMPLATE=$5
+#RPT_TEMPLATE=$5
 CUSTOM_RULES="/ngs/app/etsqat/softwares/Fortify/Core/config/customrules/CustomRules.xml"
 TRANS_FILE="translate_files.txt"
 #[Niranjini]Token updated on 11/11/14

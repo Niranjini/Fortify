@@ -22,8 +22,8 @@ export PATH=$PATH:$1
 # ********************************** *******************************************
 #SSC_URL="http://17.207.107.141:8083/ssc"
 
-SSC_URL=$2
-
+SSC_URL=
+PROJECT_FOLDER=$2
 SRC=$PROJECT_FOLDER
 USE_64="-64"
 JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"

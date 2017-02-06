@@ -25,8 +25,8 @@ export PATH=$PATH:$1
 SSC_URL=
 var=$2
 echo $var
-SRC= $var | cut -d'=' -f2
-#SRC=$PROJECT_FOLDER
+IFS='=' read -ra var1 <<< "$var"
+SRC=${var[1]}
 echo $SRC
 BUILD_ID=$4
 JAVA_VER=$6

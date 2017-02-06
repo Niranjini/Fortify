@@ -27,6 +27,7 @@ PROJECT_FOLDER=$2
 BUILD_ID=$3
 JAVA_VER=1.8
 SRC=$PROJECT_FOLDER
+echo $SRC
 USE_64="-64"
 JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
 #JAVA_CP=$(find $PROJECT_FOLDER -name '*.jar')
@@ -50,30 +51,6 @@ DATE=$(date +"%Y%m%d%H%M")
 BUILD_ID=$BUILDID"_"$DATE
 mkdir $BUILD_ID
 COMMENT
-
-
-# ******************************************************************************
-# Maven Project- install all the dependencies
-# ******************************************************************************
-if [[ $MAVEN_PROJ = YES || $MAVEN_PROJ = yes ]]
-then
-     export M2_HOME=/ngs/app/etsqat/softwares/apache-maven
-     export M2=$M2_HOME/bin
-     export PATH=$M2:$PATH
-     export JAVA_HOME=/ngs/app/etsqat/softwares/jdk1.8.0_66
-	 export PATH=$JAVA_HOME/bin:$PATH
-     cd $PROJECT_FOLDER    
-     mvn package
-     cd ..
-fi
-# *****************************************************************************
-# Untar .war files
-# ******************************************************************************
-WAR_FILE=$(find $PROJECT_FOLDER -name "*.war")
-if [ -n "$WAR_FILE" ];
-then
-jar xvf $WAR_FILE
-fi
 
 
 # *****************************************************************************

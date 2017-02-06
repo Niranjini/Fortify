@@ -27,13 +27,17 @@ ProjFolder=$2
 IFS='=' read -ra src <<< "$ProjFolder"
 SRC=${src[1]}
 
-buildID=$8
+buildID=$3
 IFS='=' read -ra buildid <<< "$buildID"
 BUILD_ID=${buildid[1]}
 
-javaver=$9
+javaver=$4
 IFS='=' read -ra javaVER <<< "$javaver"
 JAVA_VER=${javaVER[1]}
+
+RPTTemp=$5
+IFS='=' read -ra RTemp <<< "$RPTTemp"
+RPT_TEMPLATE=${RTemp[1]}
 
 USE_64="-64"
 JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
@@ -41,7 +45,7 @@ JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
 FPR_FILE="${BUILD_ID}.fpr"
 LOG_TRANS="TRANSLOG_${BUILD_ID}.txt"
 LOG_SCAN="SCANLOG_${BUILD_ID}.txt"
-#RPT_TEMPLATE=$5
+
 CUSTOM_RULES="/ngs/app/etsqat/softwares/Fortify/Core/config/customrules/CustomRules.xml"
 TRANS_FILE="translate_files.txt"
 #[Niranjini]Token updated on 11/11/14

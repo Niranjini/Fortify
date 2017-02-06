@@ -23,11 +23,18 @@ export PATH=$PATH:$1
 #SSC_URL="http://17.207.107.141:8083/ssc"
 
 SSC_URL=
-var=$2
-echo $var
-IFS='=' read -ra var1 <<< "$var"
-SRC=${var1[1]}
-echo $SRC
+ProjFolder=$2
+IFS='=' read -ra src <<< "$ProjFolder"
+SRC=${src[1]}
+
+buildID=$2
+IFS='=' read -ra buildid <<< "$buildID"
+BUILD_ID=${buildid[1]}
+
+buildID=$2
+IFS='=' read -ra buildid <<< "$buildID"
+BUILD_ID=${buildid[1]}
+
 BUILD_ID=WebGoat
 JAVA_VER=1.8
 USE_64="-64"

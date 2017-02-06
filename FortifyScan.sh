@@ -28,8 +28,8 @@ echo $var
 IFS='=' read -ra var1 <<< "$var"
 SRC=${var1[1]}
 echo $SRC
-BUILD_ID=$4
-JAVA_VER=$6
+BUILD_ID=WebGoat
+JAVA_VER=1.8
 USE_64="-64"
 JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
 #JAVA_CP=$(find $PROJECT_FOLDER -name '*.jar')

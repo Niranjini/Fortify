@@ -26,7 +26,7 @@ SSC_URL=
 var=$2
 echo $var
 IFS='=' read -ra var1 <<< "$var"
-SRC=${var[1]}
+SRC=${var1[1]}
 echo $SRC
 BUILD_ID=$4
 JAVA_VER=$6

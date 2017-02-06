@@ -24,6 +24,7 @@ export PATH=$PATH:$1
 
 SSC_URL=
 PROJECT_FOLDER=$2
+BUILD_ID=$3
 SRC=$PROJECT_FOLDER
 USE_64="-64"
 JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
@@ -35,7 +36,7 @@ RPT_TEMPLATE=$6
 CUSTOM_RULES="/ngs/app/etsqat/softwares/Fortify/Core/config/customrules/CustomRules.xml"
 TRANS_FILE="translate_files.txt"
 #[Niranjini]Token updated on 11/11/14
-AUTHTOKEN=$3
+AUTHTOKEN=
 PROJECT=$4
 VERSION=$5
 # *****************************************************************************

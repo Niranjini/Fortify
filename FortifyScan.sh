@@ -23,9 +23,10 @@ export PATH=$PATH:$1
 #SSC_URL="http://17.207.107.141:8083/ssc"
 
 SSC_URL=
-SRC= $2 | cut -d'=' -f2
-SRC=$PROJECT_FOLDER
-#echo $SRC
+var=$2
+SRC= $var | cut -d'=' -f2
+#SRC=$PROJECT_FOLDER
+echo $SRC
 BUILD_ID=$4
 JAVA_VER=$6
 USE_64="-64"

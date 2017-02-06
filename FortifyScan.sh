@@ -27,16 +27,14 @@ ProjFolder=$2
 IFS='=' read -ra src <<< "$ProjFolder"
 SRC=${src[1]}
 
-buildID=$2
+buildID=$8
 IFS='=' read -ra buildid <<< "$buildID"
 BUILD_ID=${buildid[1]}
 
-buildID=$2
-IFS='=' read -ra buildid <<< "$buildID"
-BUILD_ID=${buildid[1]}
+javaver=$9
+IFS='=' read -ra javaVER <<< "$javaver"
+JAVA_VER=${javaVER[1]}
 
-BUILD_ID=WebGoat
-JAVA_VER=1.8
 USE_64="-64"
 JAVA_OPTS="-Xmx12288M -Xms600M -Xss24M -XX:MaxPermSize=256M"
 #JAVA_CP=$(find $PROJECT_FOLDER -name '*.jar')

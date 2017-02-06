@@ -1,7 +1,7 @@
 FORTIFY_PATH="Applications/HP_Fortify/HP_Fortify_SCA_and_Apps_16.10/bin"
-PROJECT_FOLDER="WebGoat"
+PROJECT_FOLDER="/Users/niran/.jenkins/workspace/FortifyDemo/WebGoat"
 BUILD_ID=WebGoat
-JAVA_VER=1.8
+JAVA_VER="1.8"
 RPT_TEMPLATE="DeveloperWorkbook.xml"
 #SSC_URL="https://ma-etsqaset-lapp01.corp.apple.com:8443/ssc"
 #AUTHTOKEN=14e98d93-77d3-442b-a025-930d5a6cb63f
